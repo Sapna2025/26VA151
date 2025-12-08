@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile Card</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to right, #e3f2fd, #fce4ec);
+            font-family: Arial, sans-serif;
+        }
+        .card {
+            width: 360px;
+            background-color: rgba(8, 193, 249, 0);
+            border-radius: 16px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-6px);
+        }
+        .card img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            border: 4px solid #333;
+            object-fit: cover;
+        }
+        .name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 12px;
+        }
+        .course {
+            font-size: 16px;
+            color: #555;
+            margin: 6px 0;
+        }
+        .info {
+            width: 100%;
+            margin-top: 12px;
+            font-size: 14px;
+        }
+        .info div {
+            display: flex;
+            justify-content: space-between;
+            margin: 6px 0;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 4px;
+        }
+        .info b {
+            color: #333;
+        }
+        .skills {
+            margin-top: 12px;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: center;
+        }
+        .skills span {
+            background: #333;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 14px;
+            font-size: 12px;
+        }
+        .social {
+            margin-top: 14px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .social a {
+            text-decoration: none;
+            color: white;
+            padding: 7px 12px;
+            border-radius: 6px;
+            font-size: 13px;
+        }
+        .github   { background: #14f209; }
+        .leetcode { background: #f90808; }
+        .codechef { background: #0f1ef1; }
+        .linkedin { background: #db741a; }
+        .buttons {
+            margin-top: 16px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .buttons button {
+            padding: 9px 16px;
+            border: none;
+            background-color: #333;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .buttons button:hover {
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="C:\Users\gaura\OneDrive - ABES\Pictures\college images\sapna.jpg"alt="Student Photo">
+        <div class="name">Sapna Saini</div>
+        <div class="course">B.Tech (CSE - AIML)</div>
+        <div class="info">
+            <div><b>Roll No:</b> <span>2025B15310048</span></div>
+            <div><b>College:</b> <span>ABES Engineering College</span></div>
+            <div><b>Semester:</b> <span>1st</span></div>
+            <div><b>Email:</b> <span>sapna2006saini@gmail.com</span></div>
+        </div>
+        <div class="skills">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>C</span>
+            <span>C++</span>
+            <span>Python</span>
+        </div>
+        <div class="social">
+            <a href="https://github.com/Sapna2025" class="github" target="_blank">GitHub</a>
+            <a href="https://leetcode.com/codebysapna" class="leetcode" target="_blank">LeetCode</a>
+            <a href="https://www.codechef.com/users/Codebyme" class="codechef" target="_blank">CodeChef</a>
+            <a href="https://linkedin.com/in/Sapna Saini" class="linkedin" target="_blank">LinkedIn</a>
+        </div>
+        <div class="buttons">
+            <button>View</button>
+            <button>Edit</button>
+        </div>
+    </div>
+</body>
+</html>
